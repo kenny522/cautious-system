@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    width: 350px;
+  }
+}
+
+main {
+  width: 700px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 30px;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 30px;
+  font-style: normal;
+}
+
+h3 {
+  font-style: normal;
+  color: black;
+  text-align: left;
+}
+
+.quizPage {
+  position: relative;
+  text-align: left;
+}
+
+button {
+  color: white;
+  background-color: rgb(144, 90, 199);
+  font-size: 20px;
+  margin: 5px;
+}
+
+p,
+label,
+input {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+}
+
+#highScoresBtn {
+  color: rgb(18, 18, 19);
+  background-color: gray;
+  border: none;
+  font-size: 18px;
+}
+
+#welcome {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#timerDisplay {
+  float: right;
+  font-size: 18px;
+}
+
+#highscoreList {
+  background-color: rgb(106, 108, 109);
+  font-size: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: gray;
+}

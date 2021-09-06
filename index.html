@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <button type="button" id="highScoresBtn">View Highscores</button>
+      <div id="timerDisplay">Timer: <span id="timerValue">65</span></div>
+    </nav>
+
+    <!-- Main starting section of page-->
+    <main>
+      <section id="welcome">
+        <h1>Code Quiz</h1>
+        <p>
+          Try to answer the following questions within the time limit. Any wrong
+          answers will penalize your score and time by ten seconds! Good Luck!
+        </p>
+        <button type="button" id="startBtn">Start the Quiz</button>
+      </section>
+      <!-- Section of quiz containing the button and question layout -->
+      <section class="quizPage" id="page1" name="1" value="3" hidden>
+        <h2>Commonly used data types do not include these:</h2>
+        <button type="button" class="answerBtn" value="3">3. alerts</button
+        ><br />
+        <button type="button" class="answerBtn" value="1">1. strings</button
+        ><br />
+        <button type="button" class="answerBtn" value="2">2. boolean</button
+        ><br />
+        <button type="button" class="answerBtn" value="4">4. numbers</button>
+      </section>
+
+      <section class="quizPage" id="page2" name="2" value="3" hidden>
+        <h2>
+          A condition in an if / else statement is enclosed within __________.
+        </h2>
+        <button type="button" class="answerBtn" value="1">1. quotes " "</button
+        ><br />
+        <button type="button" class="answerBtn" value="2">
+          2. curly brackets { }</button
+        ><br />
+        <button type="button" class="answerBtn" value="3">
+          3. parentheses ( )</button
+        ><br />
+        <button type="button" class="answerBtn" value="4">
+          4. square brackets [ ]
+        </button>
+      </section>
+
+      <section class="quizPage" id="page3" name="3" value="4" hidden>
+        <h2>An Array in JavaScript can be used to store _________.</h2>
+        <button type="button" class="answerBtn" value="1">
+          1. numbers and strings</button
+        ><br />
+        <button type="button" class="answerBtn" value="2">2. booleans</button
+        ><br />
+        <button type="button" class="answerBtn" value="3">3.other arrays</button
+        ><br />
+        <button type="button" class="answerBtn" value="4">
+          4. all of the above
+        </button>
+      </section>
+
+      <section class="quizPage" id="page4" name="4" value="2" hidden>
+        <h2>
+          String values must be enclosed with __________ when being assigned to
+          variables.
+        </h2>
+        <button type="button" class="answerBtn" value="1">1. quotes " "</button
+        ><br />
+        <button type="button" class="answerBtn" value="2">2. commas , ,</button
+        ><br />
+        <button type="button" class="answerBtn" value="3">
+          3. curly brackets { }</button
+        ><br />
+        <button type="button" class="answerBtn" value="4">
+          4. parentheses ( )
+        </button>
+      </section>
+
+      <section class="quizPage" id="page5" name="5" value="4" hidden>
+        <h2>
+          A tool used during development and debugging for printing content to
+          the debugger is:
+        </h2>
+        <button type="button" class="answerBtn" value="1">1.for loops</button
+        ><br />
+        <button type="button" class="answerBtn" value="2">2. console.log</button
+        ><br />
+        <button type="button" class="answerBtn" value="3">3. JavaScript</button
+        ><br />
+        <button type="button" class="answerBtn" value="4">
+          4. terminal / bash
+        </button>
+      </section>
+      <!-- End of the quiz section after taking the quiz -->
+      <section id="complete" name="6" hidden>
+        <h1>End of Quiz!</h1>
+        <p>Your score is <span id="finalScore">0</span>.</p>
+        <label for="initials">Enter Initials:</label>
+        <input type="text" maxlength="3" id="initials" name="initials" />
+        <button type="submit" id="initialsBtn">Submit</button>
+      </section>
+      <!-- Section showing if the answer will be correct or wrong -->
+      <section id="correct" hidden>
+        <h3>Correct Answer!</h3>
+      </section>
+
+      <section id="incorrect" hidden>
+        <h3>Wrong Answer!</h3>
+      </section>
+      <!-- Highscore section and end of quiz page, that resets and brings you back to the main page -->
+      <section id="highscores" hidden>
+        <h1>Highscores</h1>
+        <ol type="1" id="highscoreList"></ol>
+        <button type="button" id="BackBtn">Back to Main Page</button>
+        <button type="reset" id="clearScores">Clear Highscores</button>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
